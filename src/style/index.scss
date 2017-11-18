@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Raleway:100');
+
+
+html, body {
+  margin: 1vw;
+  padding: 0;
+  height: 100%;
+  background: rgba(135,255,249,1);  
+  background: linear-gradient(45deg, rgba(135,255,249,1) 0%, #87c7f5 100%);
+  text-align: left;
+  font-family: sans-serif;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 7vw;
+	
+	@media all and (orientation:landscape) {
+		font-size: 9vh;  	
+	}
+}
+
+.text {
+	min-height: 60vw;
+
+	@media all and (orientation:landscape) {
+		min-height: 55vh;  	
+	}
+}
+
+.line {
+  font-family: 'Monoton', cursive;
+  font-size: 8vw;
+  line-height: 1.5em;
+  color: #fff;
+  text-align: left;
+	word-spacing: 0.5em;
+
+	@media all and (orientation:landscape) {
+		font-size: 7vh;  	
+	}
+	
+	> span {
+		font-size: 1.7em;
+		width: 20vw;
+		display: inline-block;
+	}
+}
