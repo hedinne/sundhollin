@@ -52,14 +52,14 @@ export default class App extends Component {
 	componentDidMount() {
 		setInterval(this.countdown, 1000);
 
-		if (typeof window !== 'undefined') {
-			const script = require('./script.js');
-			const s = document.createElement('script');
-			s.type = 'text/javascript';
-			s.async = true;
-			s.innerHTML = script;
-			this.instance.appendChild(s);
-		}
+		// if (typeof window !== 'undefined') {
+		// 	const script = require('./script.js');
+		// 	const s = document.createElement('script');
+		// 	s.type = 'text/javascript';
+		// 	s.async = true;
+		// 	s.innerHTML = script;
+		// 	this.instance.appendChild(s);
+		// }
 	}
 
 	render() {
@@ -74,9 +74,7 @@ export default class App extends Component {
 								<h1>Sundhöllin hefur opnað!</h1>
 								<div class="line">Drífðu þig í sund.</div>
 							</div>
-						) : (
-							<h1>Nei, Sundhöllin opnar eftir</h1>
-						)}
+						) : (<h1>Sundhöllin opnar eftir</h1>)}
 					</div>
 				)}
 

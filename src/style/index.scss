@@ -6,7 +6,7 @@ html, body {
   padding: 0;
   height: 100%;
   background: rgba(135,255,249,1);  
-  background: linear-gradient(45deg, rgba(135,255,249,1) 0%, #87c7f5 100%);
+  background: linear-gradient(45deg, #87fff9 0%, #87c7f5 100%);
   text-align: left;
   font-family: sans-serif;
   color: #fff;
@@ -53,3 +53,17 @@ h1 {
 		display: inline-block;
 	}
 }
+
+@keyframes u {
+	0%{transform:rotate(0deg);}
+	25%{transform:rotate(10deg);}
+	50%{transform:rotate(0deg);}
+	75%{transform:rotate(-10deg);}
+	100%{transform:rotate(0deg);}
+};
+
+@keyframes m {
+	0%{margin-top:2vh;opacity:0;}
+	20%{opacity:1.0;margin-top:0vh;margin-left:0vw;transform:rotate(random(300)deg);}
+	100%{opacity:0.4;margin-top:100vh;margin-left: random(4)vw;transform:rotate(1080deg);}
+};

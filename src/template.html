@@ -6,6 +6,23 @@
   <title>
     <%= htmlWebpackPlugin.options.title %>
   </title>
+
+  <!-- WOW -->
+  <meta itemprop="name" content="Hvenær opnar Sundhöllin?">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Hvenær opnar Sundhöllin?">
+  <meta name="twitter:image:src" content="https://xn--hvenropnarsundhllin-oxb16a.info/assets/wowt.jpg">
+
+  <meta name="og:title" content="Hvenær opnar Sundhöllin?">
+  <meta name="og:image" content="https://xn--hvenropnarsundhllin-oxb16a.info/assets/wowsa.jpg">
+  <meta name="og:url" content="https://xn--hvenropnarsundhllin-oxb16a.info/">
+  <meta name="og:site_name" content="Hvenær opnar Sundhöllin?">
+  <meta name="og:locale" content="is_Is">
+  <meta name="og:type" content="website">
+
+  <!-- !WOW -->
+
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -31,6 +48,8 @@
 		}) %>
     <script defer src="<%= htmlWebpackPlugin.files.chunks['bundle'].entry %>"></script>
     <script>window.fetch || document.write('<script src="<%= htmlWebpackPlugin.files.chunks["polyfills"].entry %>"><\/script>')</script>
+    <script src="script.js">
+    </script>
 </body>
 
 </html>
