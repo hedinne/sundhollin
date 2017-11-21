@@ -40,7 +40,7 @@
 		o.style.top = `${d(40)}vh`;
 		o.style.left = `${d(100)}vw`;
 		o.style.fontSize = `${d(60) + 6}px`;
-		o.innerHTML = Math.random() < 0.5 ? '🏊‍♂️' : '🏊‍♀️';
+		o.innerHTML = Math.random() < 0.5 ? '🏊‍' : '🏊‍';
 		w.appendChild(o);
 	}
 })();
