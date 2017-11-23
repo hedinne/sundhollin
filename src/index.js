@@ -52,14 +52,6 @@ export default class App extends Component {
 	componentDidMount() {
 		setInterval(this.countdown, 1000);
 
-		// if (typeof window !== 'undefined') {
-		// 	const script = require('./script.js');
-		// 	const s = document.createElement('script');
-		// 	s.type = 'text/javascript';
-		// 	s.async = true;
-		// 	s.innerHTML = script;
-		// 	this.instance.appendChild(s);
-		// }
 	}
 
 	render() {
